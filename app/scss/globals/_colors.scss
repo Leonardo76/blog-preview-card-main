@@ -1,0 +1,19 @@
+:root{
+  --c-yellow:hsl(47, 88%, 63%);
+  --c-gray-950:hsl(0, 0%, 7%);
+  --c-gray-500:hsl(0, 0%, 42%);
+  --c-white:hsl(0, 0%, 100%);
+  --c-black:hsl(0, 0%, 0%);
+
+  --color-body-text:var(--c-gray-500);
+  --color-body-bg:var(--c-yellow);
+  --color-card-category-bg:var(--c-yellow);
+  --color-card-bg:var(--c-white);
+  --color-card-border:var(--c-gray-950);
+  --color-card-shadow:var(--c-black);
+  --color-card-category:var(--c-gray-950);
+  --color-card-publish-date:var(--c-gray-950);
+  --color-card-title:var(--c-gray-950);
+  --color-card-author-name:var(--c-gray-950);
+  --color-link:var(--c-yellow);
+}

@@ -1,0 +1,36 @@
+@use "../util/functions" as *;
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  font-family: var(--font), Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+  color: var(--color-body-text);
+  background-color: var(--color-body-bg);
+}
+
+h2 {
+  font-size: var(--font-size-h2);
+  font-weight: 800;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  font-size: var(--font-size-p);
+  font-weight: 500;
+}
+
+img, picture, svg, video {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}

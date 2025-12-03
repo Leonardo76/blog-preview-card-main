@@ -1,0 +1,85 @@
+@use '../util/functions' as *;
+
+.card {
+  background-color: var(--color-card-bg);
+  border-radius: 20px;
+  border: 1px solid var(--color-card-border);
+  box-shadow: 8px 8px var(--color-card-shadow);
+  padding: 24px;
+  width: 327px;
+  height: 501px;
+
+  @media(width >= rem(376)) {
+    width: 384px;
+    height: 522px;
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  &__image {
+    border-radius: 10px;
+    margin-inline: auto;
+    object-fit: cover;
+    width: 279px;
+    height: 200px;
+
+    @media(width >= rem(376)) {
+      width: 336px;
+      height: 200px;
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  &__category {
+    display: inline-block;
+    width: fit-content;
+    background-color: var(--color-card-category-bg);
+    font-size: var(--font-size-category);
+    font-weight: 800;
+    color: var(--color-card-category);
+    padding: 4px 12px 4px 12px;
+    border-radius: 4px;
+  }
+
+  &__publish-date {
+    font-size: var(--font-size-category);
+    color: var(--color-card-publish-date);
+    font-weight: 500;
+  }
+
+  &__title {
+  }
+
+  &__link {
+    color: var(--color-card-title);
+
+    &:hover{
+      color: var(--color-link);
+    }
+  }
+
+  &__author {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+  }
+
+  &__userpic {
+    width: 32px;
+  }
+
+  &__author-name {
+    color: var(--color-card-author-name);
+    font-size: var(--font-size-author-name);
+    font-weight: 800;
+  }
+}

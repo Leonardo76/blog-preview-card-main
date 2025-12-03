@@ -1,0 +1,46 @@
+@use "../util/functions" as *;
+//normal
+@font-face {
+  font-family: "Figtree";
+  font-weight: 400;
+  font-style: normal;
+}
+
+//medium
+@font-face {
+  font-family: "Figtree";
+  font-weight: 500;
+  font-style: normal;
+}
+
+//extrabold
+@font-face {
+  font-family: "Figtree";
+  font-weight: 800;
+  font-style: normal;
+}
+
+:root {
+  --font: 'Figtree';
+
+  --fs-12:calc(12 / 16 * 1rem);
+  --fs-14:calc(14 / 16 * 1rem);
+  --fs-16:calc(16 / 16 * 1rem);
+  --fs-20:calc(20 / 16 * 1rem);
+  --fs-24:calc(24 / 16 * 1rem);
+
+  --font-size-h2:var(--fs-20);
+  --font-size-p:var(--fs-14);
+  --font-size-category:var(--fs-12);
+  --font-size-publish-date:var(--fs-12);
+  --font-size-author-name:var(--fs-14);
+
+  @media(width >= rem(376)) {
+    --font-size-h2: var(--fs-24);
+    --font-size-p: var(--fs-16);
+
+    --font-size-category:var(--fs-14);
+    --font-size-publish-date:var(--fs-14);
+  }
+
+}
