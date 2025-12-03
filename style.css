@@ -34,11 +34,11 @@
 }
 :root {
   --font: 'Figtree';
-  --fs-12:calc(12 / 16 * 1rem);
-  --fs-14:calc(14 / 16 * 1rem);
-  --fs-16:calc(16 / 16 * 1rem);
-  --fs-20:calc(20 / 16 * 1rem);
-  --fs-24:calc(24 / 16 * 1rem);
+  --fs-12:rem(12);
+  --fs-14:rem(14);
+  --fs-16:rem(16);
+  --fs-20:rem(20);
+  --fs-24:rem(24);
   --font-size-h2:var(--fs-20);
   --font-size-p:var(--fs-14);
   --font-size-category:var(--fs-12);
@@ -101,7 +101,7 @@ img, picture, svg, video {
   border-radius: 20px;
   border: 1px solid var(--color-card-border);
   box-shadow: 8px 8px var(--color-card-shadow);
-  padding: 24px;
+  padding: 1.5rem;
   width: 327px;
   height: 501px;
 }
